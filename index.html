@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivial Trivia Game</title>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel ="stylesheet" href= "https://bootswatch.com/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+  <div class="container">
+      <div id="page1">
+            <div id="panels" class="panel panel-success">
+              <div class="panel-heading"> 
+              <h1 class="panel-title">Trivial Trivia Game</h1>
+              </div>
+              <div id="rules" class="panel-body content">
+              <h3 > Once you click Start, the timer starts running down and you will see all the trivia questions.
+              <br> If you answer all before the time is up, click Done
+               <br> Good Luck!</h3>
+               <p><a id="start" class="btn btn-primary btn-lg">START</a></p>
+              </div>
+            </div>
+      </div>
+
+      <div id="page2">
+        <div id="panels" class="panel panel-success">
+          <div class="panel-heading">
+            <h2 class="panel-title">
+            Trivial Trivia Game
+            <br>
+             Time remaining: <span id="timer"></span>
+            </h2>
+          </div>
+          <div class="panel-body">
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Here's first trivia question. Make a good choice and use radio buttons below to make a selection of your choice.
+                  </h3>
+              </div>
+              <div class="panel-body">
+
+                <form>
+                  <label class="radio-inline">
+                  <input type="radio" name="one" value="cor">Option 1
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="one" value="not">Option 2
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="one" value="not">Option 3
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Here's first trivia question. Make a good choice and use radio buttons below to make a selection of your choice.
+                  </h3>
+              </div>
+              <div class="panel-body">
+                <form>
+                  <label class="radio-inline">
+                  <input type="radio" name="two" value="cor">Option 1
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="two" value="not">Option 2
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="two" value="not">Option 3
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Here's first trivia question. Make a good choice and use radio buttons below to make a selection of your choice.
+                  </h3>
+              </div>
+              <div class="panel-body">
+                <form>
+                  <label class="radio-inline">
+                  <input type="radio" name="three" value="cor">Option 1
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="three" value="not">Option 2
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="three" value="not">Option 3
+                  </label>
+                </form>
+              </div>
+            </div>
+             <div class="panel panel-info">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Here's first trivia question. Make a good choice and use radio buttons below to make a selection of your choice.
+                  </h3>
+              </div>
+              <div class="panel-body">
+                <form>
+                  <label class="radio-inline">
+                  <input type="radio" name="four" value="cor">Option 1
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="four" value="not">Option 2
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="four" value="not">Option 3
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Here's first trivia question. Make a good choice and use radio buttons below to make a selection of your choice.
+                  </h3>
+              </div>
+              <div class="panel-body">
+                <form>
+                  <label class="radio-inline">
+                  <input type="radio" name="five" value="cor">Option 1
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="five" value="not">Option 2
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="five" value="not">Option 3
+                  </label>
+                </form>
+              </div> -->
+            </div>
+             <p><a id="done" class="btn btn-primary btn-lg">DONE</a></p>
+          </div>
+        </div>
+      </div> 
+
+      <div id="page3">
+        <div id="panels" class="panel panel-success">
+          <div class="panel-heading">
+          <h1 class="panel-title">Trivial Trivia Game</h1>
+          </div>
+          <div id="score" class="panel-body content">
+            <h2 > All Done!</h2>
+            <h3>Correct Answers: <span id="correct"></span></h3>
+            <h3>Incorrect Answers: <span id="incorrect"></span></h3>
+            <h3>Unanswered: <span id="unanswered"></span></h3>
+          </div>
+        </div>
+      </div>             
+ </div>
+</div> 
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
+
+

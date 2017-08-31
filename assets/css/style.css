@@ -1,0 +1,53 @@
+#wrapper {
+	width: 80%;
+	margin: 10px auto;
+
+}
+
+body {
+	background-image: url("../images/bgpattern.png");
+	text-align: center;
+	color: black;
+}
+
+#panels {
+	background: rgba(186, 201, 167, 0.4);
+}
+
+#rules, #score {
+	margin: 11% 10%;
+}
+
+
+.panel > .panel-heading {
+    background-color: skyblue;
+	border-color: white;
+}
+
+.panel-info > .panel-body {
+    background-color: lightpink;
+	border-color: white;
+}
+
+#page1 {
+	display: block;
+}
+
+#page2 {
+	display: none;
+}
+
+#page3 {
+	display: none;
+}
+/*img {
+
+	height: 80px;
+	width: 80px;
+	margin: 5px 0;
+}
+
+.crystals, .goals {
+	background: rgba(186, 201, 167, 0.5);
+	margin: 10px 0;
+}*/
