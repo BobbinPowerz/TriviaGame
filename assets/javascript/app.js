@@ -7,49 +7,48 @@ var checked = [];
 var un = keys.length;
 $("#unanswered").html(0);
 console.log("number of sets: " + un);
-var timeLeft = 20; 
+var timerStart;
+var timeLeft = 30; 
 
 
 
 $( "#start" ).on("click", function() {
-$("#page1").css("display","none");
-$("#page2").css("display","block");
-console.log('start is workinig');
+    $("#page1").css("display","none");
+    $("#page2").css("display","block");
+    console.log('start is workinig');
 
-runTime ();
+    runTime ();
 
 });
 
 
 function runTime(){
 
-var timerStart = setTimeout(countDown,1000);
-
-    function countDown(){
-    timeLeft--;
-       if (timeLeft > 0){
-          setTimeout(countDown,1000);
-          $("#timer").html(timeLeft);
+    timerStart = setInterval(countDown,1000);
+ 
+    function countDown() {
+        if(timeLeft == 0) {
+            filterLogic ();
+            $("#page1").css("display","none");
+            $("#page2").css("display","none");
+            $("#page3").css("display","block");
+            clearInterval(timerStart);
         }
-       else {
-        filterLogic ();
-        $("#page1").css("display","none");
-        $("#page2").css("display","none");
-        $("#page3").css("display","block");
-       }
+        timeLeft--;
+        $("#timer").html(timeLeft);
     };
 
 };
 
-
-
 $("#done").on("click", function() {
-$("#page1").css("display","none");
-$("#page2").css("display","none");
-$("#page3").css("display","block");
-console.log('hi, done is workinig');
+    $("#page1").css("display","none");
+    $("#page2").css("display","none");
+    $("#page3").css("display","block");
+    console.log('done is workinig');
 
-timeLeft = 0;
+    // timeLeft = 0;
+    clearInterval(timerStart);
+    filterLogic();
 
 });
 
@@ -92,23 +91,4 @@ function filterLogic(){
     console.log("Unanswered: " +  unanswered);
 
 };
-    // var valHolder = [];
-    // var radios = $(":checked").val();
-    // console.log(radios);
-    // // valHolder.push(radios);
-    // // console.log(valHolder);
-
-
-     //  // radios.change(function(){
-     //    var filtered = radios.filter(":checked");
-     //     if (filtered.val() == "cor"){
-     //        cor = cor + 1;
-     //     }
-     //     else {
-     //        incor = incor + 1;
-     //     }
-     //     un = 3 - (cor + incor);
-     //     console.log(cor, incor, un);
-     // // });
-
-
+    

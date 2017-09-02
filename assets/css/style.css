@@ -5,32 +5,53 @@
 }
 
 body {
-	background-image: url("../images/bgpattern.png");
+	background-image: url("../images/topography.png");
 	text-align: center;
-	color: black;
+	
+}
+
+h3 {
+	font: 25px Aerial, sans-serif;
+	color: #111D13;
+	line-height: 150%;
+}
+
+h2 {
+	line-height: 150%;
+	padding: 10px;
 }
 
 #panels {
-	background: rgba(186, 201, 167, 0.4);
+	background: rgba(247, 217, 140, 0.3);
 }
-
-#rules, #score {
-	margin: 11% 10%;
-}
-
 
 .panel > .panel-heading {
-    background-color: skyblue;
-	border-color: white;
+    background-color: #989B7D;
+    border: 0;
 }
 
+
 .panel-info > .panel-body {
-    background-color: lightpink;
-	border-color: white;
+    background-color: #C3DEC5;
+    border: 0;
+    font: 20px Aerial, sans-serif;
+	color: #111D13;
+	
 }
+
+.panel {
+    border: 0;
+}
+
+.btn {
+background-color: #415D43;
+border: 0;
+}
+
 
 #page1 {
 	display: block;
+	margin-top: 15%;
 }
 
 #page2 {
@@ -39,15 +60,5 @@ body {
 
 #page3 {
 	display: none;
+	margin-top: 15%;
 }
-/*img {
-
-	height: 80px;
-	width: 80px;
-	margin: 5px 0;
-}
-
-.crystals, .goals {
-	background: rgba(186, 201, 167, 0.5);
-	margin: 10px 0;
-}*/
